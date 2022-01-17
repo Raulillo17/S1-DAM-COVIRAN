@@ -122,3 +122,37 @@ nav ul li ul li:hover{
 .img1{
     text-align: center;
 }
+.busta{
+    height: 450px;
+    background-image: url(../img/coviran-bustamante.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.busta:hover img[src="img/goku.png"]{
+    left: 550px;
+    transform: rotate(720deg);
+    visibility: visible;
+    top: 150px;
+    width: 10%;
+}
+
+img[src="img/goku.png"]{
+    position: absolute;
+    visibility: hidden;
+    transition: left 5s,width 10s, transform 5s;
+    left: 550px;
+    width: 1%;
+    /*animation: busta 1s, transform 10s;*/
+    /*transform: rotate(720deg);*/
+   
+}
+@keyframes busta{
+    from {left: 1000px;}
+
+    to {left: 0px;}
+
+    
+}
